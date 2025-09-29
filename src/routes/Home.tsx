@@ -15,7 +15,15 @@ export default function Home() {
     >
       <h1 style={{ color: "#f5f5f5", fontSize: "4rem", fontFamily: "Archivo Black" }}>Griffin Doyle</h1>
       <h2 style={{ color: "#f5f5f5", fontSize: "2rem", fontFamily: "Archivo" }}>Technology Enthusiast</h2>
-      <p style={{ color: "#f5f5f5", fontSize: "1.2rem", fontFamily: "Archivo" }}>
+      <p
+        style={{
+          color: "#f5f5f5",
+          fontSize: "1.2rem",
+          fontFamily: "Archivo",
+          maxWidth: "600px",
+          textAlign: "center",
+        }}
+      >
         Welcome to my personal website! Here you can find information about me, my projects, and my blog.
       </p>
       <div style={{ display: "flex", gap: "1rem", paddingTop: "2rem" }}>
