@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { Card } from "@/components/retroui/Card";
 import headshot from "@/static/headshot.jpg";
 
@@ -32,31 +33,42 @@ export default function About() {
               ABOUT ME
             </Card.Title>
           </Card.Header>
-          <Card.Content className="text-card-foreground">
+          <Card.Content className="text-card-foreground" style={{ fontFamily: "Space Grotesk, sans-serif", lineHeight: 1.75 }}>
             <img
               src={headshot}
-              alt="placeholder headshot"
+              alt="Griffin Doyle"
               style={{
                 float: "right",
-                marginLeft: "1rem",
+                marginLeft: "1.25rem",
                 marginBottom: "1rem",
-                shapeOutside: "margin-box",
                 width: "clamp(150px, 30%, 200px)",
                 objectFit: "cover",
                 objectPosition: "top",
               }}
               className="rounded"
             />
-            <p>Hello! My my name is Griffin and I am a software engineer. I graduated from UNSW with a double Bachelor's Degree in Software Engineering and Physics in 2024. While I am passionate for all facets of computer technology, I am still aiming to find my niche in a world where AI development is everpresent. Outside of technology, I am passionate about cooking and enjoy learning new techniques and flavour profiles and would like to post the meals I make on my <a href="/blog" style={{ color: 'var(--primary)' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary-hover)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--primary)'}>blog</a>.</p>
+            <p>
+              I'm Griffin — a software engineer based in Sydney. I graduated from UNSW in 2024 with a double degree in Software Engineering and Physics, and I'm currently a technology graduate at Westpac Bank.
+            </p>
             <br />
-            <p>I have started my professional development career as a technology graduate at Westpac Bank. Through this program I have been able to rotate through teams and gain experience across the business. My first 6 month rotation was in the consumer banking divison, specifically working on the internal CRM application. I was personally involved in the planning and design of a new branch manager view to allow leaders of banking teams manage and view their proactive sales leads. This project was very complicated as we had to ensure that the filtration of leads was accurate and performant, across multiple tabs which delineated different relationships of bankers to the logged in manager. This position introduced me to enterprise software engineering practices as well as the importance of positions such as solution designers in the development lifecycle.</p>
+            <p>
+              My first rotation was in consumer banking, where I worked on the internal CRM. I was involved in designing a branch manager view for tracking proactive sales leads — a deceptively tricky problem involving complex lead-to-banker relationship filtering across multiple tabs. It was a good introduction to enterprise-scale engineering and the role of solution designers in the development lifecycle.
+            </p>
             <br />
-            <p>My second position at Westpac (and the one I am currently in) is in the in-house hosting team. We utilsise Red Hat products to host automation and container workloads for other teams within the business. This position has strengthened my understanding of networking, infrastructure and DevOps. I am still in the early stages of this team and look forward to how much more I can grow!</p>
+            <p>
+              I'm now in the in-house hosting team, where we use Red Hat products to run automation and container workloads for other teams across the business. It's deepened my understanding of networking, infrastructure, and DevOps considerably.
+            </p>
             <br />
-            <p>Outside of work, I have a few personal projects that I am working on. The first is this website! I built this site using ReactJS and TailwindCSS to showcase my skills and projects, as well as to gain experience with "vibe coding". I also have a few other projects that I am working on such as a HTTP proxy and mocking TUI application as well as starting to document my homelab that I will be building out. I am always looking for new challenges and opportunities to learn and grow as a developer.</p>
+            <p>
+              Outside work I'm building a homelab, working on a HTTP proxy and mocking TUI, and cooking. I write about all of it on my{" "}
+              <Link to="/blog" style={{ color: "var(--primary)" }} className="hover:text-accent-foreground">
+                blog
+              </Link>
+              .
+            </p>
           </Card.Content>
         </Card>
       </div>
-    </div >
+    </div>
   );
 }
