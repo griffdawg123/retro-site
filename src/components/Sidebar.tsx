@@ -85,7 +85,7 @@ export default function Sidebar() {
       </div>
 
       {navItems.map(({ to, icon: Icon, label }) => {
-        const isActive = location.pathname === to
+        const isActive = location.pathname.startsWith(to)
         return (
           <div key={to} className="group" style={{ position: 'relative' }}>
             <Link
