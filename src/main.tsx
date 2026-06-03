@@ -6,7 +6,6 @@ import {
   createRoute,
   createRouter,
 } from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 
 import './styles.css'
 import reportWebVitals from './reportWebVitals.ts'
@@ -19,12 +18,7 @@ import Blog from './routes/Blog.tsx'
 import Contact from './routes/Contact.tsx'
 
 const rootRoute = createRootRoute({
-  component: () => (
-    <>
-      <App />
-      <TanStackRouterDevtools />
-    </>
-  ),
+  component: App,
 })
 
 const indexRoute = createRoute({
