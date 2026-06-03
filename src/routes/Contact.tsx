@@ -1,5 +1,3 @@
-import { Breadcrumb } from "@/components/retroui/Breadcrumb";
-
 export default function Contact() {
   return (
     <div
@@ -9,18 +7,7 @@ export default function Contact() {
         padding: "2rem",
       }}
     >
-      <Breadcrumb>
-        <Breadcrumb.List>
-          <Breadcrumb.Item>
-            <Breadcrumb.Link href="/" className="text-muted-foreground">Home</Breadcrumb.Link>
-          </Breadcrumb.Item>
-          <Breadcrumb.Separator />
-          <Breadcrumb.Item>
-            <Breadcrumb.Page className="text-white">Contact</Breadcrumb.Page>
-          </Breadcrumb.Item>
-        </Breadcrumb.List>
-      </Breadcrumb>
-      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "calc(100% - 4rem)" }}>
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
         <h1 style={{ color: "#f5f5f5", fontSize: "4rem", fontFamily: "Archivo Black" }}>Contact</h1>
       </div>
     </div>

@@ -1,4 +1,3 @@
-import { Breadcrumb } from "@/components/retroui/Breadcrumb";
 import { Card } from "@/components/retroui/Card";
 import headshot from "@/static/headshot.jpg";
 
@@ -7,29 +6,15 @@ export default function About() {
     <div
       style={{
         backgroundColor: "#1a1a1a",
-        height: "100vh",
+        minHeight: "100vh",
         padding: "2rem",
       }}
     >
-      <Breadcrumb>
-        <Breadcrumb.List>
-          <Breadcrumb.Item>
-            <Breadcrumb.Link href="/" className="text-muted-foreground">
-              Home
-            </Breadcrumb.Link>
-          </Breadcrumb.Item>
-          <Breadcrumb.Separator />
-          <Breadcrumb.Item>
-            <Breadcrumb.Page className="text-white">About</Breadcrumb.Page>
-          </Breadcrumb.Item>
-        </Breadcrumb.List>
-      </Breadcrumb>
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-start",
-          height: "calc(100% - 4rem)",
           paddingTop: "2rem",
         }}
       >
