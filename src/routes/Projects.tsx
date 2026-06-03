@@ -5,7 +5,6 @@ import { PiFileCss } from "react-icons/pi";
 import { DiJava, DiPython } from "react-icons/di";
 import { Bluetooth } from "lucide-react";
 import { FaGolang } from "react-icons/fa6";
-import { Breadcrumb } from "@/components/retroui/Breadcrumb";
 import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
@@ -48,17 +47,6 @@ export default function Projects() {
         padding: "2rem",
       }}
     >
-      <Breadcrumb>
-        <Breadcrumb.List>
-          <Breadcrumb.Item>
-            <Breadcrumb.Link href="/" className="text-muted-foreground">Home</Breadcrumb.Link>
-          </Breadcrumb.Item>
-          <Breadcrumb.Separator />
-          <Breadcrumb.Item>
-            <Breadcrumb.Page className="text-white">Projects</Breadcrumb.Page>
-          </Breadcrumb.Item>
-        </Breadcrumb.List>
-      </Breadcrumb>
       <div style={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '2rem' }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "2rem" }}>
           {projects.map((project) => (
