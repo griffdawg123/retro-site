@@ -15,6 +15,7 @@ import Home from './routes/Home.tsx'
 import About from './routes/About.tsx'
 import Projects from './routes/Projects.tsx'
 import Blog from './routes/Blog.tsx'
+import BlogPost from './routes/BlogPost.tsx'
 import Contact from './routes/Contact.tsx'
 
 const rootRoute = createRootRoute({
@@ -45,6 +46,12 @@ const blogRoute = createRoute({
   component: Blog,
 })
 
+const blogPostRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/blog/$slug',
+  component: BlogPost,
+})
+
 const contactRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/contact',
@@ -56,6 +63,7 @@ const routeTree = rootRoute.addChildren([
   aboutRoute,
   projectsRoute,
   blogRoute,
+  blogPostRoute,
   contactRoute,
 ])
 
