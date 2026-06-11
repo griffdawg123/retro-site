@@ -1,6 +1,6 @@
 
 import { FaReact } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
+import { SiCloudflareworkers, SiTypescript } from "react-icons/si";
 import { PiFileCss } from "react-icons/pi";
 import { DiJava, DiPython } from "react-icons/di";
 import { Bluetooth } from "lucide-react";
@@ -8,6 +8,14 @@ import { FaGolang } from "react-icons/fa6";
 import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
+  {
+    name: "Presto",
+    description:
+      "A lightweight slides.com-style presentation editor built with React, deployed on Cloudflare Workers with a Workers KV backend. Click to try the live demo.",
+    icons: [<FaReact />, <SiCloudflareworkers />],
+    imageUrl: "https://via.placeholder.com/500x500.png?text=Presto",
+    githubUrl: "https://presto.doylegriffin32.workers.dev",
+  },
   {
     name: "Frontend Web Page",
     description: "A responsive front-end application built with React.",
