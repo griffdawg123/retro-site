@@ -48,7 +48,7 @@ export default function About() {
               className="rounded"
             />
             <p>
-              I'm Griffin — a software engineer based in Sydney. I graduated from UNSW in 2024 with a double degree in Software Engineering and Physics, and I'm currently a technology graduate at Westpac Bank.
+              I'm Griffin — a software engineer based in Sydney. I graduated from UNSW in 2024 with a double degree in Software Engineering and Physics, and I work at Westpac Bank.
             </p>
             <br />
             <p>
@@ -56,7 +56,15 @@ export default function About() {
             </p>
             <br />
             <p>
-              I'm now in the in-house hosting team, where we use Red Hat products to run automation and container workloads for other teams across the business. It's deepened my understanding of networking, infrastructure, and DevOps considerably.
+              My second rotation was in the in-house hosting team, where we used Red Hat OpenShift to run automation and container workloads for teams across the business — deepening my understanding of networking, infrastructure, and DevOps.
+            </p>
+            <br />
+            <p>
+              My third rotation was in the Service Management team under the Chief Engineering Office. The work here was less about delivery and more about strategy — understanding what production-grade applications actually require in an enterprise context, engaging with teams across the business, and figuring out how technology can best enable them. It shifted the way I think: from shipping features to understanding how technology decisions ripple through an organisation.
+            </p>
+            <br />
+            <p>
+              Following that rotation I've joined the Platform Automation team permanently. We establish patterns and enable teams across the business to consume automation for on-premise software infrastructure — working with Terraform, VMware, and Ansible to make infrastructure provisioning consistent and self-service.
             </p>
             <br />
             <p>
