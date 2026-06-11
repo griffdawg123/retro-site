@@ -6,7 +6,6 @@ import {
   createRoute,
   createRouter,
 } from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 
 import './styles.css'
 import reportWebVitals from './reportWebVitals.ts'
@@ -16,15 +15,11 @@ import Home from './routes/Home.tsx'
 import About from './routes/About.tsx'
 import Projects from './routes/Projects.tsx'
 import Blog from './routes/Blog.tsx'
+import BlogPost from './routes/BlogPost.tsx'
 import Contact from './routes/Contact.tsx'
 
 const rootRoute = createRootRoute({
-  component: () => (
-    <>
-      <App />
-      <TanStackRouterDevtools />
-    </>
-  ),
+  component: App,
 })
 
 const indexRoute = createRoute({
@@ -51,6 +46,12 @@ const blogRoute = createRoute({
   component: Blog,
 })
 
+const blogPostRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/blog/$slug',
+  component: BlogPost,
+})
+
 const contactRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/contact',
@@ -62,6 +63,7 @@ const routeTree = rootRoute.addChildren([
   aboutRoute,
   projectsRoute,
   blogRoute,
+  blogPostRoute,
   contactRoute,
 ])
 
